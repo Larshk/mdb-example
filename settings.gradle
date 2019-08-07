@@ -1,0 +1,3 @@
+rootProject.name = 'mdb-example'
+
+include 'ejb'

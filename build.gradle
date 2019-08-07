@@ -1,0 +1,17 @@
+apply plugin: 'ear'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    deploy project(path: ':ejb', configuration: 'archives')
+
+//    earlib group: 'log4j', name: 'log4j', version: '1.2.17', ext: 'jar'
+}
+
+ear {
+    deploymentDescriptor {
+        description 'mdb-example-rh-support-case-02415782'
+    }
+}

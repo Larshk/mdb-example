@@ -1,0 +1,15 @@
+apply plugin: 'java'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+//    compile group: 'log4j', name: 'log4j', version: '1.2.17', ext: 'jar'
+    // https://mvnrepository.com/artifact/org.jboss.spec.javax.ejb/jboss-ejb-api_3.1_spec
+    compile group: 'org.jboss.spec.javax.ejb', name: 'jboss-ejb-api_3.1_spec', version: '1.0.2.Final'
+    // https://mvnrepository.com/artifact/org.jboss.spec.javax.jms/jboss-jms-api_1.1_spec
+    compile group: 'org.jboss.spec.javax.jms', name: 'jboss-jms-api_1.1_spec', version: '1.0.1.Final'
+    // https://mvnrepository.com/artifact/org.jboss.spec.javax.annotation/jboss-annotations-api_1.1_spec
+    compile group: 'org.jboss.spec.javax.annotation', name: 'jboss-annotations-api_1.1_spec', version: '1.0.1.Final'
+}
